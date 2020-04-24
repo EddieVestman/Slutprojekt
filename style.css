@@ -1,0 +1,111 @@
+body {
+  background-image: url(https://wallpaperaccess.com/full/226175.jpg);
+margin:0px;
+padding:0px 0px;
+}
+header {
+	grid-area: header;
+	background-color:Red ;
+	padding: 0px 5px;
+}
+.gridContainer {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-areas:
+	"header"
+	"main"
+	"footer";
+
+
+}
+main{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+justify-content: center;
+align-self: center;
+padding:10px;
+
+}
+nav ul {
+	display: flex;
+	flex-direction: row; /*Säger att flexboxen ska vara i rad*/
+	padding: 0px; /*Tar bort padding*/
+	margin: 5px; /*Tar bort margin*/
+	list-style-type: none; /*Tar bort stylen */
+}
+nav li{
+	display: flex;
+	justify-content: center;
+	flex: 33%;
+}
+nav li a  {
+	color:White;
+	font-weight: bold;
+	text-decoration: none; /*tar bort linjen under texten*/
+	padding: 10px 25px;
+	font-size: 250%;
+	display: flex;
+	align-items: center; /*Lägger texten i "center"*/
+	justify-content: center;
+  font-family:monospace;
+
+}
+
+.Information {
+  text-align:center;
+}
+
+section.infoBox {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  color:white;
+
+}
+
+
+
+.undernav {
+  display:flex;
+  justify-content:center;
+  color:red;
+  font-size:70%;
+}
+.undernav ul {
+background-color:red;
+padding:0px 10px;
+margin:0px;
+
+}
+section.infoBox img {
+    border:5px red solid;
+    border-radius: 10px;
+}
+
+footer {
+color:white;
+background-color:red;
+margin:0px;
+padding:0px;
+
+
+}
+.griddrivers {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-areas:
+	"header"
+	"main"
+	"footer"
+}
+
+main.drivers {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  align-self: center;
+  padding:100px;
+
+}
