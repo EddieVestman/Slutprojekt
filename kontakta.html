@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+		<link href="Style.css" rel="stylesheet">
+		<title>Contact</title>
+	</head>
+	<body>
+		<div class="gridContainer">
+			<header>
+				<nav>
+					<ul>
+						<li>
+							<a href="index.html">Formula 1</a>
+						</li>
+					</ul>
+
+
+				</nav>
+			</header>
+			<nav class="undernav">
+				<ul>
+					<li>
+						<a href="kontakta.html">Contact</a>
+					</li>
+					<li>
+					<a href="om.html">About </a>
+					</li>
+				</ul>
+
+			</nav>
+
+      <main>
+        <form method="get" action="index.html">
+        			<fieldset>
+        				<legend>Name</legend>
+        				<label for="firstname">First:</label>
+        				<input type="text" id="firstname" name="firstname"/>
+        				<label for="lastname">Last: </label>
+        				<input type="text" id="lastname" name="lastname"/>
+        			</fieldset>
+        			<fieldset>
+        				<legend>Age</legend>
+        				<label for="18">18+: </label>
+        				<input type="radio" id="18" name="age" value="18"/>
+        				<br>
+        				<label for="17">0-17: </label>
+        				<input type="radio" id="17" name="age" value="17"/>
+
+        			</fieldset>
+        			<fieldset>
+        				<legend>Gender</legend>
+        				<label for="Male">Male: </label>
+        				<input type="checkbox" id="Male" name="gender1" value="Male"/>
+        				<br>
+        				<label for="Female">Female: </label>
+        				<input type="checkbox" id="Female" name="gender2" value="Female"/>
+        			</fieldset>
+              <fieldset>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username">
+                <div>
+                <label for="pass">Password (8 characters minimum):</label>
+                <input type="password" id="pass" name="password"
+                minlength="8" required>
+
+              </div>
+              </fieldset>
+
+        			<fieldset>
+        				<legend>Somethings about yourself</legend>
+        				<textarea></textarea>
+
+        			</fieldset>
+        			<fieldset>
+        			<legend>Favoirte F1 team</legend>
+        			  <input list="f1teams" name="Favoirte F1 team">
+        				<datalist id="f1teams">
+        					<option value="Mercedes">
+        					<option value="Ferarri">
+        					<option value="Alfa romeo">
+        					<option value="Renault">
+                  <option value="Haas">
+                  <option value="Williams Racing">
+                  <option value="AlphaTauri">
+                	<option value="Astomartin/honda">
+
+
+        				</datalist>
+          <input type="submit">
+        			</fieldset>
+        		</form>
+      </main>
+			<div>
+        <ol>
+          <li>
+            <p>Mail - Edve02001@utb.vaxjo.se </p>
+          </li>
+
+          <li>
+            <p> Phone:  17 241 53 21 </p>
+          </li>
+				</div>
+				<footer class="kontaktafooter">
+					<p> © 2020 Eddie Vestman</p>
+				</footer>
+			</body>
+				</html>

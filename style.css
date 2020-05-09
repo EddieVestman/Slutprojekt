@@ -1,7 +1,10 @@
 body {
-  background-image: url(https://wallpaperaccess.com/full/226175.jpg);
+background-image: url(https://wallpaperaccess.com/full/226175.jpg);
 margin:0px;
 padding:0px 0px;
+}
+.lag {
+background-color: white;
 }
 header {
 	grid-area: header;
@@ -56,16 +59,14 @@ nav li a  {
   text-align:center;
 }
 
-section.infoBox {
+Section.infoBox {
   display:flex;
   flex-direction: column;
   align-items: center;
   color:white;
-
 }
 
-
-
+}
 .undernav {
   display:flex;
   justify-content:center;
@@ -83,15 +84,28 @@ section.infoBox img {
     border-radius: 10px;
 }
 
-footer {
-color:white;
-background-color:red;
-margin:0px;
-padding:0px;
+iframe {
+  border:5px red solid;
+  border-radius: 10px;
 
 
 }
-.griddrivers {
+footer {
+color:rgb(255, 255, 255);
+background-color:red;
+margin:0px;
+padding:0px;
+margin-top: 6%;
+
+}
+.videofooter {
+	color:rgb(255, 255, 255);
+  background-color:red;
+  margin:0px;
+  padding:0px;
+  margin-top: 13%;
+}
+.griddrivers, .gridteams{
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-areas:
@@ -100,12 +114,64 @@ padding:0px;
 	"footer"
 }
 
-main.drivers {
+main.drivers  {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
   grid-template-rows: 1fr 1fr;
   justify-content: center;
   align-self: center;
-  padding:100px;
+  padding:0;
+}
 
+.footerdriver, .aboutfooter {
+	color:rgb(255, 255, 255);
+  background-color:red;
+  margin:0px;
+  padding:0px;
+  margin-top: 23%;
+
+}
+
+.teamsfooter{
+  color:rgb(255, 255, 255);
+  background-color:red;
+  margin:0px;
+  padding:0px;
+  margin-top: 42%;
+}
+.aboutfooter {
+	color:rgb(255, 255, 255);
+	background-color:red;
+	margin:0px;
+	padding:0px;
+	margin-top: 22%;
+}
+#olist, ol {
+color:#FF0000;
+font-size: 1.5em;
+}
+.teambody {
+  background-image: url(https://simracingsetup.com/wp-content/uploads/2020/02/F1-2020-All-Team-Desktop-Wallpaper.jpg);
+}
+h1 {
+Color:white;
+font-size: 25px;
+}
+
+a:link {
+color:blue;
+font-size: 50px;
+}
+
+a:visited {
+  color: white;
+}
+a:focus {
+background-color: blue;
+}
+a:hover {
+  color: hotpink;
+}
+a:active {
+background-color:white;
 }
