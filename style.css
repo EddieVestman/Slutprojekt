@@ -1,20 +1,20 @@
 body {
-background-image: url(https://wallpaperaccess.com/full/226175.jpg);
-margin:0px;
-padding:0px 0px;
+background-image: url(https://wallpaperaccess.com/full/226175.jpg); /*backgrunds bild */
+margin:0px; /*tar bort margin från yterdelarna på sidan */
+padding:0px 0px; /* gör så det är 0px padding */
 }
 .lag {
-background-color: white;
+background-color: white; /* backgrunds färg*/
 }
 header {
-	grid-area: header;
-	background-color:Red ;
+	grid-area: header;  /*säger att det är header */
+	background-color:Red ; /*backgrundsfärg */
 	padding: 0px 5px;
 }
 .gridContainer {
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-areas:
+	display: grid; /*säger åt den att använda grid */
+	grid-template-columns: 1fr; /*delar griden i en kollumn */
+	grid-template-areas: /*Hur griden ska sorteras */
 	"header"
 	"main"
 	"footer";
@@ -26,28 +26,28 @@ display: grid;
 grid-template-columns: 1fr 1fr 1fr;
 grid-template-rows: 1fr 1fr;
 justify-content: center;
-align-self: center;
+align-self: center; /* säger åt den att vara i center*/
 padding:10px;
 
 }
 nav ul {
 	display: flex;
 	flex-direction: row; /*Säger att flexboxen ska vara i rad*/
-	padding: 0px; /*Tar bort padding*/
-	margin: 5px; /*Tar bort margin*/
+	padding: 0px;
+	margin: 5px; /*Tar bort margin med 5px*/
 	list-style-type: none; /*Tar bort stylen */
 }
 nav li{
 	display: flex;
 	justify-content: center;
-	flex: 33%;
+	flex: 33%; /* gör så att flexboxen kan växa med 33% inom en vis area*/
 }
 nav li a  {
-	color:White;
-	font-weight: bold;
+	color:White; /*textens färg */
+	font-weight: bold;/*gör fonten tjock */
 	text-decoration: none; /*tar bort linjen under texten*/
 	padding: 10px 25px;
-	font-size: 250%;
+	font-size: 250%; /*storleken på fonten */
 	display: flex;
 	align-items: center; /*Lägger texten i "center"*/
 	justify-content: center;
@@ -56,7 +56,7 @@ nav li a  {
 }
 
 .Information {
-  text-align:center;
+  text-align:center; /* centerar texten i mitten*/
 }
 
 Section.infoBox {
@@ -84,18 +84,18 @@ section.infoBox img {
     border-radius: 10px;
 }
 
-iframe {
-  border:5px red solid;
+iframe { /* style för youtube videon */
+  border:5px red solid; /*lägger till en border */
   border-radius: 10px;
 
 
 }
 footer {
-color:rgb(255, 255, 255);
+color:rgb(255, 255, 255); /*färg med hjälp av rgb */
 background-color:red;
 margin:0px;
 padding:0px;
-margin-top: 6%;
+margin-top: 6%; /* margin på top för fottern */
 
 }
 .videofooter {
@@ -158,20 +158,48 @@ Color:white;
 font-size: 25px;
 }
 
-a:link {
-color:blue;
+a:link { /*ändrar stylen på länkar */
+color:white;
 font-size: 50px;
 }
 
-a:visited {
+a:visited { /*ändrar hur länken ser ut när du vart inne på den en gång */
   color: white;
 }
-a:focus {
+a:focus { /* när du använder tab eller pil tangenterna*/
 background-color: blue;
 }
-a:hover {
+a:hover { /* när du håller musen över texten*/
   color: hotpink;
 }
-a:active {
+a:active { /* när du håller in musen på texten*/
 background-color:white;
+}
+
+table { /* */
+	width: 65%;
+	border: 1px solid #ddd;
+}
+table caption {
+	font-size: 140%;
+	margin-bottom: 20px;
+}
+
+td, th {
+	padding: 5px;
+}
+td:nth-child(even) {
+  background-color: white;
+}
+
+td:nth-child(even) {
+  background-color: white;
+}
+
+.Standingsfooter {
+	color:rgb(255, 255, 255);
+  background-color:red;
+  margin:0px;
+  padding:0px;
+  margin-top:1px;
 }
