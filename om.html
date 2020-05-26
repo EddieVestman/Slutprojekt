@@ -1,54 +1,58 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-		<link href="Style.css" rel="stylesheet">
-		<title>about us</title>
-	</head>
+<!DOCTYPE html> <!-- Säger vilken verison av html som används-->
+<html lang="en"> <!--Används för skärmläsare, så den vet att sidan är skriven på engelska -->
+	<head> <!-- Början av head elementet-->
+				<meta charset="UTF-8"> <!--Tekenkodning UTF-8-->
+				<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Stänger av zoom på alla telefoner -->
+				<meta http-equiv="X-UA-Compatible" content="ie=edge"> <!-- gör så den använder sig av den senaste rendereringsmotorn i microsoft edge-->
+					
+				<link href="Style.css" rel="stylesheet"> <!-- Kopplar samman sidan till css -->
+				<title>about us</title>
+	</head> <!-- Avslutar head elementet-->
+	
 	<body>
-		<div class="gridContainer">
-			<header>
-				<nav>
-					<ul>
-						<li>
-							<a href="index.html">Formula 1</a>
+			<div class="gridContainer">
+				<header> <!--Början av header -->
+					<nav>
+						<ul>
+							<li> <!--List item -->
+								<a href="index.html">Formula 1</a>
+							</li>
+						</ul>
+
+
+					</nav>
+				</header>
+			</div>
+					<nav class="undernav">
+						<ul>
+							<li> <!--List item -->
+								<a href="kontakta.html">Contact</a>
+							</li>
+							<li> <!--List item -->
+								<a href="om.html">About </a>
+							</li>
+						</ul>
+					</nav>
+				<main>
+					<ol id="olist"> <!--Början på  order list med ett ID-->
+						<li> <!--List item -->
+							<p> Creator of site: Eddie Vestman </p>
 						</li>
-					</ul>
-
-
-				</nav>
-			</header>
-			<nav class="undernav">
-				<ul>
-					<li>
-						<a href="kontakta.html">Contact</a>
-					</li>
-					<li>
-					<a href="om.html">About </a>
-					</li>
-				</ul>
-
-			</nav>
-			<main>
-			<ol id="olist">
-        <li>
-          <p> Creator of site: Eddie Vestman </p>
-        </li>
-        <li>
-          <p> Age: 17 </p>
-        </li>
-
-        <h1>Video where F1 drivers explaine f1</h1>
-        <video width="320" height="240" controls>
-          <source src="f1.mp4" type="video/mp4">
-            </video>
+						<li> <!--List item -->
+							<p> Age: 17 </p>
+						</li>
+					</ol>
+				<h1>Video where F1 drivers explaine f1</h1> <!--En rubrik-->
+				<video controls> <!--Video används för html5 video och controls gör så det går att pausa,styra ljud och sätta på fullskärm-->
+					<source src="f1.mp4" type="video/mp4"> <!--Säger vilken video som ska användas. I mitt fall kan jag inte ladda upp en mp4 fil på github så tyärr kan man inte se videon på sidan -->
+				</video> <!--Avslutar video -->
 				</main>
 
-        <div>
-          <a href="https://www.formula1.com/"> Formula 1 website </a>
-        </div>
+			<div>
+				<a href="https://www.formula1.com/"> Formula 1 website </a> <!-- länk till formulas egna hemsida -->
+			</div>
 				<footer class="aboutfooter">
 					<p> © 2020 Eddie Vestman</p>
 				</footer>
-			</body>
-				</html>
+	</body>
+</html>

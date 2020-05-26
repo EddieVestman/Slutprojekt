@@ -1,70 +1,67 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-		<link href="Style.css" rel="stylesheet">
-		<title>F1</title>
-	</head>
-	<body id="kropp">
-		<div class="gridContainer">
-			<header>
-				<nav>
-					<ul>
-						<li>
-							<a href="videos.html">Videos</a>
-						</li>
-					</ul>
-        </nav>
-			</header>
-			<nav class="undernav">
-				<ul>
-					<li>
-						<a href="kontakta.html">Contact</a>
-					</li>
-          <li>
-            <a href="index.html">Home</a>
-          </li>
-					<li>
-					<a href="om.html">About </a>
-					</li>
-				</ul>
+<!DOCTYPE html><!-- Säger vilken verison av html som används-->
+<html lang="en"> <!--Används för skärmläsare, så den vet att sidan är skriven på engelska -->
+	<head> <!-- Början av head elementet-->
+				<meta charset="UTF-8"> <!--Tekenkodning UTF-8-->
+				<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Stänger av zoom på alla telefoner -->
+				<meta http-equiv="X-UA-Compatible" content="ie=edge"> <!-- gör så den använder sig av den senaste rendereringsmotorn i microsoft edge-->
+				<link href="Style.css" rel="stylesheet"> <!-- Kopplar samman sidan till css -->
+				<title>Videos</title>
+	</head> <!-- Avslutar head elementet-->
+	
+	<body id="kropp"> <!-- Starar body elementet och har även ett id som heter kropp. Id används för en unik sak på sidan som ska styleas.-->
+			<div class="gridContainer">
+				<header> <!--Början av header -->
+					<nav>
+						<ul>
+							<li>
+								<a href="index.html">Formula 1</a>
+							</li>
+						</ul>
+					</nav>
+				</header>
+			</div>
+					<nav class="undernav">
+						<ul>
+							<li>
+								<a href="kontakta.html">Contact</a>
+							</li>
+							<li>
+								<a href="om.html">About </a>
+							</li>
+						</ul>
 
-			</nav>
-			<main>
+					</nav>
+				<main>
 					<section class="infoBox">
-          <iframe  width="375" height="250" src="https://www.youtube.com/embed/FDrolrgtuIk"> </iframe> <!-- Iframe användas för att använda dig av youtube videos -->
-				</section>
-
-					<section class="infoBox">
-
-          <iframe  width="375" height="250" src="https://www.youtube.com/embed/2ICLz1_nRj0"> </iframe>
-				</section>
+						<iframe src="https://www.youtube.com/embed/FDrolrgtuIk"> </iframe> <!-- Iframe användas för att använda dig av youtube videos -->
+					</section>
 
 					<section class="infoBox">
-
-          <iframe  width="375" height="250" src="https://www.youtube.com/embed/1Q7eRNZcKDk	"> </iframe>
-				</section>
-
-					<section class="infoBox">
-
-          <iframe  width="375" height="250" src="https://www.youtube.com/embed/g_lZdwzAtGU"> </iframe>
-				</section>
+						<iframe src="https://www.youtube.com/embed/2ICLz1_nRj0"> </iframe>
+					</section>
 
 					<section class="infoBox">
-
-          <iframe  width="375" height="250" src="https://www.youtube.com/embed/OX58IkeSl4c"> </iframe>
-				</section>
+						<iframe  src="https://www.youtube.com/embed/1Q7eRNZcKDk"> </iframe>
+					</section>
 
 					<section class="infoBox">
+						<iframe   src="https://www.youtube.com/embed/g_lZdwzAtGU"> </iframe>
+					</section>
 
-          <iframe  width="375" height="250" src="https://www.youtube.com/embed/r7JfBJzUN0U"> </iframe>
-				</section>
+					<section class="infoBox">
+						<iframe   src="https://www.youtube.com/embed/OX58IkeSl4c"> </iframe>
+					</section>
+
+					<section class="infoBox">
+						<iframe src="https://www.youtube.com/embed/r7JfBJzUN0U"> </iframe>
+					</section>
 
 
 
 				</main>
+				
 				<footer class="videofooter"> <!--footer för video sidan -->
 					<p> © 2020 Eddie Vestman</p>
 				</footer>
-			</body>
-				</html>
+	</body>
+</html>

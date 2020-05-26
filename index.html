@@ -1,72 +1,74 @@
-<!DOCTYPE html>
-<html> <!-- -->
-<head> <!-- -->
-<meta charset="UTF-8"> <!-- -->
-		<link href="Style.css" rel="stylesheet"> <!-- Kopplar samman sidan till css -->
-		<title>F1</title>
-	</head>
+<!DOCTYPE html><!-- Säger vilken verison av html som används-->
+<html lang="en"> <!--Används för skärmläsare, så den vet att sidan är skriven på engelska -->
+	<head> <!-- Början av head elementet-->
+					<meta charset="UTF-8"> <!--Tekenkodning UTF-8-->
+					<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Stänger av zoom på alla telefoner -->
+					<meta http-equiv="X-UA-Compatible" content="ie=edge"> <!-- gör så den använder sig av den senaste rendereringsmotorn i microsoft edge-->
+					
+					<link href="style.css" rel="stylesheet"> <!-- Kopplar samman sidan till css -->
+					<title>F1</title>
+	</head> <!-- Avslutar head elementet-->
+
 	<body> <!-- Sidans kropp -->
-		<div class="gridContainer"> <!-- En gtid för headern -->
-			<header>
-				<nav>
-					<ul>
-						<li>
-							<a href="index.html">Formula 1</a>
-						</li>
-					</ul>
+			<div class="gridContainer"> <!-- En gtid för headern -->
+					<header> <!-- Början av header, där det står Formula 1 på hemsidan-->
+							<nav>
+									<ul> <!-- Säger att det är en unorderd list-->
+											<li> <!--List item -->
+													<a href="index.html">Formula 1</a>
+											</li> <!--Stänger List item -->
+									</ul> <!--Stänger Listan -->
+							</nav>
+					</header>
+			</div>
+							<nav class="undernav"><!--En grid för nav -->
+									<ul> <!-- Säger att det är en unorderd list-->
+											<li>
+													<a href="kontakta.html">Contact</a> <!-- Gör så när man klickar på Contact så tas man till kontaktasidan -->
+											</li><!--Stänger List item -->
+											<li>
+													<a href="om.html">About </a>
+											</li><!--Stänger List item -->
+									</ul> <!--Stänger Listan -->
+							</nav>
+					<main>
+							<section class="drivers infoBox"> <!--en section och en klass för infobxen -->
+								<a href="drivers.html"><img class = "indexbilder" src="https://gmsrp.cachefly.net/images/19/12/16/70c717f334b30710034f72733e8ec056/960.jpg" alt="drivers" ></a><!-- bild och länk till drivers sidan-->
+									<h1>Drivers</h1>
+							</section>
 
+							<section class="Information infoBox">
+									<h2>Information</h2> <!--en h1 som sitter ovanför rutan med information -->
+									<p>
+											Formula One (also known as Formula 1 or F1) is the highest class of single-seater auto racing sanctioned by the Fédération Internationale de l'Automobile (FIA) and owned by the Formula One Group. The World Drivers' Championship <br>
+						 					which became the FIA Formula One World Championship in 1981, has been one of the premier forms of racing around the world since its inaugural season in 1950. The word "formula" in the name refers to the set of rules to which all participants' cars must conform.[1] A Formula One season consists of a series of races, known as Grands Prix (French for ''grand prizes' or 'great prizes''), which take place worldwide on purpose-built circuits and on public roads. <br>
+											The results of each race are evaluated using a points system to determine two annual World Championships: one for drivers, the other for constructors. Drivers must hold valid Super Licences, the highest class of racing licence issued by the FIA.[2] The races must run on tracks graded "1" (formerly "A"), the highest grade-rating issued by the FIA.[2] Most events occur in rural locations on purpose-built tracks, but several events take place on city streets. <br>
+									</p>
+							</section>
 
-				</nav>
-			</header>
-			<nav class="undernav"><!--En grid för nav -->
-				<ul>
-					<li>
-						<a href="kontakta.html">Contact</a> <!-- Gör så när man klickar på Contact så tas man till kontaktasidan -->
-					</li>
-					<li>
-					<a href="om.html">About </a>
-					</li>
-				</ul>
+							<section class="standings infoBox"> <!--en section för en av bilderna på index sidan -->
+								<a href="standings.html"><img class = "indexbilder" src="https://pbs.twimg.com/media/DfWxu8hXkAEJzL1.png" alt="drivers"></a>
+									<h3>Standings</h3>
+							</section>
 
-			</nav>
-			<main>
-				<section class="drivers infoBox"> <!--en section och en klass för infobxen -->
-					<a href="drivers.html"><img src="https://gmsrp.cachefly.net/images/19/12/16/70c717f334b30710034f72733e8ec056/960.jpg" alt="drivers" width="375" height="250"></a><!-- bild och länk till drivers sidan-->
-					<h1>Drivers</h1>
-				</section>
-				<section class="Information infoBox">
-					<h1>Information</h1> <!--en h1 som sitter ovanför rutan med information -->
-					<p>
-						Formula One (also known as Formula 1 or F1) is the highest class of single-seater auto racing sanctioned by the Fédération Internationale de l'Automobile (FIA) and owned by the Formula One Group. The World Drivers' Championship <br>
-						 which became the FIA Formula One World Championship in 1981, has been one of the premier forms of racing around the world since its inaugural season in 1950. The word "formula" in the name refers to the set of rules to which all participants' cars must conform.[1] A Formula One season consists of a series of races, known as Grands Prix (French for ''grand prizes' or 'great prizes''), which take place worldwide on purpose-built circuits and on public roads. <br>
-					The results of each race are evaluated using a points system to determine two annual World Championships: one for drivers, the other for constructors. Drivers must hold valid Super Licences, the highest class of racing licence issued by the FIA.[2] The races must run on tracks graded "1" (formerly "A"), the highest grade-rating issued by the FIA.[2] Most events occur in rural locations on purpose-built tracks, but several events take place on city streets. <br>
+							<section class="teams infoBox"> <!--en section för en av bilderna på index sidan -->
+								<a href="teams.html"><img class = "indexbilder" src="https://image-cdn.essentiallysports.com/wp-content/uploads/20200405224043/f1-24.jpg" alt="drivers" ></a>
+									<h4>Teams</h4>
+							</section>
 
-					</p>
-				</section>
+							<section class="videos infoBox"> <!--en section för en av bilderna på index sidan -->
+								<a href="videos.html"> <img class = "indexbilder" src="https://www.formula1.com/content/dam/fom-website/sutton/2019/Brazil/Sunday/MT017406_2019111753336844.jpg" alt="drivers" ></a>
+									<h5>Video</h5>
+							</section>
 
-					<section class="standings infoBox">
-				<a href="standings.html"><img src="https://pbs.twimg.com/media/DfWxu8hXkAEJzL1.png" alt="drivers" width="375" height="250"></a>
-						<h1>Standings</h1>
-					</section>
+							<section class="upcoming infoBox"> <!--en section för en av bilderna på index sidan -->
+								<a> <img class = "indexbilder" src="https://static.goodwood.com/globalassets/.road--racing/race/modern/2020/1-january/f1-2020-calendar/2020-formula-1-calendar-f1-19-silverstone-andy-hone-motorsport-images-goodwood-22012020.jpg?crop=(0,168,2600,1631)&width=1600" alt="drivers"></a>
+									<h6>Upcoming races</h6>
+							</section>
 
-					<section class="teams infoBox">
-				<a href="teams.html"><img src="https://image-cdn.essentiallysports.com/wp-content/uploads/20200405224043/f1-24.jpg" alt="drivers" width="375" height="250"></a>
-							<h1>Teams</h1>
-					</section>
-
-					<section class="videos infoBox">
-		<a href="videos.html"> <img src="https://www.formula1.com/content/dam/fom-website/sutton/2019/Brazil/Sunday/MT017406_2019111753336844.jpg" alt="drivers" width="375" height="250"></a>
-							<h1>Video </h1>
-					</section>
-
-					<section class="upcoming infoBox">
-						<a href="upcoming.html"> <img src="https://static.goodwood.com/globalassets/.road--racing/race/modern/2020/1-january/f1-2020-calendar/2020-formula-1-calendar-f1-19-silverstone-andy-hone-motorsport-images-goodwood-22012020.jpg?crop=(0,168,2600,1631)&width=1600" alt="drivers" width="375" height="250" > </a>
-							<h1>Upcoming races</h1>
-					</section>
-
-				</main>
-				<footer> <!-- en footer, som är längst ner på sidan -->
-					<p> © 2020 Eddie Vestman</p>
-				</footer>
-			</body>
-				</html>
+					</main>
+					<footer> <!-- en footer, som är längst ner på sidan -->
+						<p> © 2020 Eddie Vestman</p>
+					</footer>
+	</body>
+</html>

@@ -1,55 +1,53 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-		<link href="Style.css" rel="stylesheet">
-		<title>F1</title>
-	</head>
+<!DOCTYPE html> <!-- Säger vilken verison av html som används-->
+<html lang="en"> <!--Används för skärmläsare, så den vet att sidan är skriven på engelska -->
+	<head> <!-- Början av head elementet-->
+					<meta charset="UTF-8"> <!--Tekenkodning UTF-8-->
+					<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Stänger av zoom på alla telefoner -->
+					<meta http-equiv="X-UA-Compatible" content="ie=edge"> <!-- gör så den använder sig av den senaste rendereringsmotorn i microsoft edge-->
+					<link href="Style.css" rel="stylesheet"> <!-- Kopplar samman sidan till css -->
+					<title>Drivers</title>
+	</head> <!-- Avslutar head elementet-->
+
 	<body id="kropp">
-		<div class="griddrivers">
-			<header>
-				<nav>
-					<ul>
-						<li>
-							<a href="drivers.html">Drivers</a>
-						</li>
-					</ul>
+			<div class="griddrivers">
+					<header> <!--Början av header -->
+							<nav>
+									<ul> <!-- Säger att det är en unorderd list-->
+											<li>
+													<a href="index.html">Formula 1</a>
+											</li>
+									</ul>
+							</nav>
+					</header>
+			</div>
 
+						<nav class="undernav">
+									<ul> <!-- Säger att det är en unorderd list-->
+											<li>
+													<a href="kontakta.html">Contact</a>
+											</li>
 
-				</nav>
-			</header>
-			<nav class="undernav">
-				<ul>
-					<li>
-						<a href="kontakta.html">Contact</a>
-					</li>
-          <li>
-            <a href="index.html">Home</a>
-          </li>
+          						<li>
+													<a href="om.html">About </a>
+											</li>
+										</ul>
+							</nav>
+				 	<main class="drivers">
 
-          <li>
-					<a href="om.html">About </a>
-					</li>
-				</ul>
-
-			</nav>
-			<main class="drivers">
-
-        <img src="https://www.formula1.com/content/fom-website/en/drivers/lewis-hamilton/_jcr_content/image.img.1920.medium.jpg/1584013371803.jpg" alt="Lewis Hamilton" width="175" height="175">
-
-        <img src="https://www.formula1.com/content/fom-website/en/drivers/valtteri-bottas/_jcr_content/image.img.1920.medium.jpg/1584013243241.jpg" alt="Lewis Hamilton" width="175" height="175">
-        <img src="https://www.formula1.com/content/fom-website/en/drivers/charles-leclerc/_jcr_content/image.img.1920.medium.jpg/1584013824254.jpg" alt="Lewis Hamilton" width="175" height="175">
-        <img src="https://www.formula1.com/content/fom-website/en/drivers/sebastian-vettel/_jcr_content/image.img.1920.medium.jpg/1584013014200.jpg" alt="Lewis Hamilton" width="175" height="175">
-        <img src="https://www.formula1.com/content/fom-website/en/drivers/max-verstappen/_jcr_content/image.img.1920.medium.jpg/1584012927837.jpg" alt="Lewis Hamilton" width="175" height="175">
-        <img src="https://www.formula1.com/content/fom-website/en/drivers/lando-norris/_jcr_content/image.img.1920.medium.jpg/1584013897913.jpg" alt="Lewis Hamilton" width="175" height="175">
-        <img src="https://www.formula1.com/content/fom-website/en/drivers/daniel-ricciardo/_jcr_content/image.img.1920.medium.jpg/1584012376585.jpg" alt="Lewis Hamilton" width="175" height="175">
-        <img src="https://www.formula1.com/content/fom-website/en/drivers/kevin-magnussen/_jcr_content/image.img.1920.medium.jpg/1584012829634.jpg" alt="Lewis Hamilton" width="175" height="175">
-        <img src="https://www.formula1.com/content/fom-website/en/drivers/antonio-giovinazzi/_jcr_content/image.img.1920.medium.jpg/1584013739535.jpg" alt="Lewis Hamilton" width="175" height="175">
-        <img src="https://www.formula1.com/content/fom-website/en/drivers/sergio-perez/_jcr_content/image.img.1920.medium.jpg/1584013058541.jpg" alt="Lewis Hamilton" width="175" height="175">
+        		<img class ="driverbilder" src="https://www.formula1.com/content/fom-website/en/drivers/lewis-hamilton/_jcr_content/image.img.1920.medium.jpg/1584013371803.jpg" alt="lewis-hamilton">
+        		<img class ="driverbilder" src="https://www.formula1.com/content/fom-website/en/drivers/valtteri-bottas/_jcr_content/image.img.1920.medium.jpg/1584013243241.jpg" alt="valtteri-bottas">
+        		<img class ="driverbilder" src="https://www.formula1.com/content/fom-website/en/drivers/charles-leclerc/_jcr_content/image.img.1920.medium.jpg/1584013824254.jpg" alt="charles-lecler">
+        		<img class ="driverbilder" src="https://www.formula1.com/content/fom-website/en/drivers/sebastian-vettel/_jcr_content/image.img.1920.medium.jpg/1584013014200.jpg" alt="sebastian-vettel">
+        		<img class ="driverbilder" src="https://www.formula1.com/content/fom-website/en/drivers/max-verstappen/_jcr_content/image.img.1920.medium.jpg/1584012927837.jpg" alt="max-verstappen">
+        		<img class ="driverbilder" src="https://www.formula1.com/content/fom-website/en/drivers/lando-norris/_jcr_content/image.img.1920.medium.jpg/1584013897913.jpg" alt="lando-norris">
+        		<img class ="driverbilder" src="https://www.formula1.com/content/fom-website/en/drivers/daniel-ricciardo/_jcr_content/image.img.1920.medium.jpg/1584012376585.jpg" alt="daniel-ricciardo">
+        		<img class ="driverbilder" src="https://www.formula1.com/content/fom-website/en/drivers/kevin-magnussen/_jcr_content/image.img.1920.medium.jpg/1584012829634.jpg" alt="kevin-magnussen">
+        		<img class ="driverbilder" src="https://www.formula1.com/content/fom-website/en/drivers/antonio-giovinazzi/_jcr_content/image.img.1920.medium.jpg/1584013739535.jpg" alt="antonio-giovinazzi">
+        		<img class ="driverbilder" src="https://www.formula1.com/content/fom-website/en/drivers/sergio-perez/_jcr_content/image.img.1920.medium.jpg/1584013058541.jpg" alt="sergio-perez">
 
 				</main>
-				<footer class="footerdriver">
-					<p> © 2020 Eddie Vestman</p>
+					<footer class="footerdriver"> <!-- en footer, som är längst ner på sidan -->
+						<p> © 2020 Eddie Vestman</p>
 				</footer>
-			</body>
-				</html>
+	</body>
+</html>

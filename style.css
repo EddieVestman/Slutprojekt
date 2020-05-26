@@ -22,12 +22,12 @@ header {
 
 }
 main{
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-grid-template-rows: 1fr 1fr;
-justify-content: center;
-align-self: center; /* säger åt den att vara i center*/
-padding:10px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	justify-content: center;
+	align-self: center; /* säger åt den att vara i center*/
+	padding:10px;
 
 }
 nav ul {
@@ -51,7 +51,7 @@ nav li a  {
 	display: flex;
 	align-items: center; /*Lägger texten i "center"*/
 	justify-content: center;
-  font-family:monospace;
+	font-family:monospace;
 
 }
 
@@ -74,9 +74,9 @@ Section.infoBox {
   font-size:70%;
 }
 .undernav ul {
-background-color:red;
-padding:0px 10px;
-margin:0px;
+	background-color:red;
+	padding:0px 10px;
+	margin:0px;
 
 }
 section.infoBox img {
@@ -87,27 +87,29 @@ section.infoBox img {
 iframe { /* style för youtube videon */
   border:5px red solid; /*lägger till en border */
   border-radius: 10px;
+  height:250px;
+  width:375px;
 
 
 }
 footer {
-color:rgb(255, 255, 255); /*färg med hjälp av rgb */
-background-color:red;
-margin:0px;
-padding:0px;
-margin-top: 6%; /* margin på top för fottern */
+	color:rgb(255, 255, 255); /*färg med hjälp av rgb */
+	background-color:red;
+	margin:0px;
+	padding:0px;
+	margin-top: 6%; /* margin på top för fottern */
 
 }
 .videofooter {
 	color:rgb(255, 255, 255);
-  background-color:red;
-  margin:0px;
-  padding:0px;
-  margin-top: 13%;
+	background-color:red;
+	margin:0px;
+	padding:0px;
+	margin-top: 13%;
 }
 .griddrivers, .gridteams{
 	display: grid;
-	grid-template-columns: 1fr;
+	grid-template-columns: 1fr; /*delar griden i en kollumn */
 	grid-template-areas:
 	"header"
 	"main"
@@ -115,29 +117,28 @@ margin-top: 6%; /* margin på top för fottern */
 }
 
 main.drivers  {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
-  grid-template-rows: 1fr 1fr;
-  justify-content: center;
-  align-self: center;
-  padding:0;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr ; /*delar griden i en kollumn */
+	grid-template-rows: 1fr 1fr;
+	justify-content: center;
+	align-self: center;
+	padding:0;
 }
 
 .footerdriver, .aboutfooter {
 	color:rgb(255, 255, 255);
-  background-color:red;
-  margin:0px;
-  padding:0px;
-  margin-top: 23%;
-
+	background-color:red;
+	margin:0px;
+	padding:0px;
+	margin-top: 23%;
 }
 
 .teamsfooter{
-  color:rgb(255, 255, 255);
-  background-color:red;
-  margin:0px;
-  padding:0px;
-  margin-top: 42%;
+	color:rgb(255, 255, 255);
+	background-color:red;
+	margin:0px;
+	padding:0px;
+	margin-top: 42%;
 }
 .aboutfooter {
 	color:rgb(255, 255, 255);
@@ -147,38 +148,40 @@ main.drivers  {
 	margin-top: 22%;
 }
 #olist, ol {
-color:#FF0000;
-font-size: 1.5em;
+	color:#FF0000;
+	font-size: 1.5em;
 }
 .teambody {
-  background-image: url(https://simracingsetup.com/wp-content/uploads/2020/02/F1-2020-All-Team-Desktop-Wallpaper.jpg);
+	background-image: url(https://simracingsetup.com/wp-content/uploads/2020/02/F1-2020-All-Team-Desktop-Wallpaper.jpg);
 }
-h1 {
-Color:white;
-font-size: 25px;
+h1, h2 ,h3 ,h4 ,h5 ,h6 {
+	Color:white;
+	font-size: 25px;
 }
 
 a:link { /*ändrar stylen på länkar */
-color:white;
-font-size: 50px;
+	color:white;
+	font-size: 50px;
 }
 
 a:visited { /*ändrar hur länken ser ut när du vart inne på den en gång */
-  color: white;
+	color: white;
 }
 a:focus { /* när du använder tab eller pil tangenterna*/
-background-color: blue;
+	background-color: blue;
 }
 a:hover { /* när du håller musen över texten*/
-  color: hotpink;
+	color: hotpink;
 }
 a:active { /* när du håller in musen på texten*/
-background-color:white;
+	background-color:white;
 }
 
 table { /* */
 	width: 65%;
 	border: 1px solid #ddd;
+	color:white;
+
 }
 table caption {
 	font-size: 140%;
@@ -187,19 +190,34 @@ table caption {
 
 td, th {
 	padding: 5px;
-}
-td:nth-child(even) {
-  background-color: white;
-}
 
-td:nth-child(even) {
-  background-color: white;
 }
 
 .Standingsfooter {
 	color:rgb(255, 255, 255);
-  background-color:red;
-  margin:0px;
-  padding:0px;
-  margin-top:1px;
+	position: absolute;
+	left:0;
+	bottom:0;
+	top:100%;
+	width:100%;
+	height:5%;
+}
+
+form {
+	color:white;
+}
+
+.indexbilder {
+	width:375px;
+	height:250px;
+
+}
+video {
+	width:320px;
+	height: 240px;
+}
+
+.driverbilder {
+	width:175px;
+	height:175px;
 }

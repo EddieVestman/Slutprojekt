@@ -1,146 +1,150 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-		<link href="Style.css" rel="stylesheet">
-		<title>Standings</title>
-	</head>
+<!DOCTYPE html> <!-- Säger vilken verison av html som används-->
+<html lang="en"> <!--Används för skärmläsare, så den vet att sidan är skriven på engelska -->
+	<head> <!-- Början av head elementet-->
+				<meta charset="UTF-8"><!--Tekenkodning UTF-8--> 
+				<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Stänger av zoom på alla telefoner -->
+				<meta http-equiv="X-UA-Compatible" content="ie=edge"> <!-- gör så den använder sig av den senaste rendereringsmotorn i microsoft edge-->
+					
+				<link href="Style.css" rel="stylesheet"> <!-- Kopplar samman sidan till css -->
+				<title>Standings</title>
+	</head> <!-- Avslutar head elementet-->
 	<body>
-		<div class="gridContainer">
-			<header>
-				<nav>
-					<ul>
-						<li>
-							<a href="index.html">Formula 1</a>
-						</li>
-					</ul>
+			<div class="gridContainer">
+				<header> <!--Början av header -->
+					<nav>
+						<ul>
+							<li>
+								<a href="index.html">Formula 1</a> <!-- länk till index -->
+							</li>
+						</ul>
+					</nav>
+				</header>
+			</div>
+					<nav class="undernav">
+						<ul>
+							<li>
+								<a href="kontakta.html">Contact</a>
+							</li>
+							<li>
+								<a href="om.html">About </a>
+							</li>
+						</ul>
+					</nav>
+				<main>
+						
+						<section>
+							<!--Tabell för flest gjorda mål-->
+							<table>
+								<!--Tabellens namn/rubrik-->
+								<caption>Standings</caption>
+									<!--Tabellhuvud med column rubriker-->
+									<thead>
+										<tr> <!--En rad i tabbelens huvud-->
+											<th scope="col">Pos</th>
+											<th scope="col">Driver</th>
+											<th scope="col">Car</th>
+											<th scope="col">Points</th>
 
-
-				</nav>
-			</header>
-			<nav class="undernav">
-				<ul>
-					<li>
-						<a href="kontakta.html">Contact</a>
-					</li>
-					<li>
-					<a href="om.html">About </a>
-					</li>
-				</ul>
-
-			</nav>
-			<main>
-								<section>
-									<!--Tabell för flest gjorda mål-->
-									<table>
-										<!--Tabellens namn/rubrik-->
-										<caption>Standings</caption>
-										<!--Tabellhuvud med column rubriker-->
-										<thead>
-											<tr> <!--En rad i tabbelens huvud-->
-												<th scope="col">Pos</th>
-												<th scope="col">Driver</th>
-												<th scope="col">Car</th>
-												<th scope="col">Points</th>
-
-											</tr>
-										</thead>
-										<tbody>
-											<tr> <!--En rad i tabell bodyn-->
-												<td>1</td> <!--Ett tabell element i den första kolumnen-->
-												<td>Lewis Hamilton</td> <!--Ett tabell element i den andra kolumnen-->
-												<td>MERCEDES</td> <!--Ett tabell element i den tredje kolumnen-->
-												<td>413</td>
-											</tr>
-											<tr>
-												<td>2</td>
-												<td>Valtteri Bottas</td>
-												<td>MERCEDES</td>
-												<td>326</td>
-											</tr>
-											<tr>
-												<td>3</td>
-												<td>Max Verstappen</td>
-												<td>RED BULL RACING HONDA</td>
-												<td>278</td>
-											</tr>
-											<tr>
-												<td>4</td>
-												<td>Charles Leclerc</td>
-												<td>FERRARI</td>
-												<td>264</td>
-											</tr>
-											<tr>
-												<td>5</td>
-												<td>Sebastian Vettel</td>
-												<td>FERRARI</td>
-												<td>240</td>
-											</tr>
-											<tr>
-												<td>6</td>
-												<td>Carlos Sainz</td>
-												<td>MCLAREN RENAULT</td>
-												<td>96</td>
-											</tr>
-											<tr>
-												<td>7</td>
-												<td>Pierre Gasly</td>
-												<td>SCUDERIA TORO ROSSO HONDA</td>
-												<td>95</td>
-											</tr>
-											<tr>
-												<td>8</td>
-												<td>Alexander Albon</td>
-												<td>RED BULL RACING HONDA</td>
-												<td>92</td>
-											</tr>
-											<tr>
-												<td>9</td>
-												<td>Daniel Ricciardo</td>
-												<td>RENAULT</td>
-												<td>54</td>
-											</tr>
-											<tr>
-												<td>10</td>
-												<td>Sergio Perez</td>
-												<td>RACING POINT BWT MERCEDES</td>
-												<td>52</td>
-											</tr>
-											<tr>
-												<td>11</td>
-												<td>Lando Norris</td>
-												<td>	MCLAREN RENAULT</td>
-												<td>49</td>
-											</tr>
-											<tr>
-												<td>12</td>
-												<td>Kimi Räikkönen</td>
-												<td>ALFA ROMEO RACING FERRARI</td>
-												<td>43</td>
-											</tr>
-											<tr>
-												<td>13</td>
-												<td>Daniil Kvyat</td>
-												<td>SCUDERIA TORO ROSSO HONDA</td>
-												<td>37</td>
-											</tr>
-											<tr>
-												<td>14</td>
-												<td>Nico Hulkenberg</td>
-												<td>RENAULT</td>
-												<td>37</td>
-											</tr>
-										</tbody>
-										<tfoot>
-											<tr>
-												<td colspan="5">Season 2019</td>
-											</tr>
-										</tfoot>
-									</table>
-
+										</tr>
+									</thead>
+									<tbody>
+										<tr> <!--En rad i tabell bodyn-->
+											<td>1</td> <!--Ett tabell element i den första kolumnen-->
+											<td>Lewis Hamilton</td> <!--Ett tabell element i den andra kolumnen-->
+											<td>MERCEDES</td> <!--Ett tabell element i den tredje kolumnen-->
+											<td>413</td>
+										</tr>
+										<tr> <!--En rad i tabell bodyn-->
+											<td>2</td><!--Ett tabell element i den första kolumnen-->
+											<td>Valtteri Bottas</td> <!--Ett tabell element i den andra kolumnen-->
+											<td>MERCEDES</td><!--Ett tabell element i den tredje kolumnen-->
+											<td>326</td>
+										</tr>
+										<tr><!--En rad i tabell bodyn-->
+											<td>3</td><!--Ett tabell element i den första kolumnen-->
+											<td>Max Verstappen</td> <!--Ett tabell element i den andra kolumnen-->
+											<td>RED BULL RACING HONDA</td><!--Ett tabell element i den tredje kolumnen-->
+											<td>278</td>
+										</tr>
+										<tr><!--En rad i tabell bodyn-->
+											<td>4</td><!--Ett tabell element i den första kolumnen-->
+											<td>Charles Leclerc</td> <!--Ett tabell element i den andra kolumnen-->
+											<td>FERRARI</td><!--Ett tabell element i den tredje kolumnen-->
+											<td>264</td>
+										</tr>
+										<tr><!--En rad i tabell bodyn-->
+											<td>5</td><!--Ett tabell element i den första kolumnen-->
+											<td>Sebastian Vettel</td> <!--Ett tabell element i den andra kolumnen-->
+											<td>FERRARI</td><!--Ett tabell element i den tredje kolumnen-->
+											<td>240</td>
+										</tr>
+										<tr><!--En rad i tabell bodyn-->
+											<td>6</td><!--Ett tabell element i den första kolumnen-->
+											<td>Carlos Sainz</td> <!--Ett tabell element i den andra kolumnen-->
+											<td>MCLAREN RENAULT</td><!--Ett tabell element i den tredje kolumnen-->
+											<td>96</td>
+										</tr>
+										<tr><!--En rad i tabell bodyn-->
+											<td>7</td><!--Ett tabell element i den första kolumnen-->
+											<td>Pierre Gasly</td> <!--Ett tabell element i den andra kolumnen-->
+											<td>SCUDERIA TORO ROSSO HONDA</td><!--Ett tabell element i den tredje kolumnen-->
+											<td>95</td>
+										</tr>
+										<tr><!--En rad i tabell bodyn-->
+											<td>8</td><!--Ett tabell element i den första kolumnen-->
+											<td>Alexander Albon</td> <!--Ett tabell element i den andra kolumnen-->
+											<td>RED BULL RACING HONDA</td><!--Ett tabell element i den tredje kolumnen-->
+											<td>92</td>
+										</tr>
+										<tr><!--En rad i tabell bodyn--><!--En rad i tabell bodyn-->
+											<td>9</td><!--Ett tabell element i den första kolumnen-->
+											<td>Daniel Ricciardo</td> <!--Ett tabell element i den andra kolumnen-->
+											<td>RENAULT</td><!--Ett tabell element i den tredje kolumnen-->
+											<td>54</td>
+										</tr>
+										<tr><!--En rad i tabell bodyn-->
+											<td>10</td><!--Ett tabell element i den första kolumnen-->
+											<td>Sergio Perez</td> <!--Ett tabell element i den andra kolumnen-->
+											<td>RACING POINT BWT MERCEDES</td><!--Ett tabell element i den tredje kolumnen-->
+											<td>52</td>
+										</tr>
+										<tr><!--En rad i tabell bodyn-->
+											<td>11</td><!--Ett tabell element i den första kolumnen-->
+											<td>Lando Norris</td> <!--Ett tabell element i den andra kolumnen-->
+											<td>	MCLAREN RENAULT</td><!--Ett tabell element i den tredje kolumnen-->
+											<td>49</td>
+										</tr>
+										<tr><!--En rad i tabell bodyn-->
+											<td>12</td><!--Ett tabell element i den första kolumnen-->
+											<td>Kimi Räikkönen</td> <!--Ett tabell element i den andra kolumnen-->
+											<td>ALFA ROMEO RACING FERRARI</td><!--Ett tabell element i den tredje kolumnen-->
+											<td>43</td>
+										</tr>
+										<tr><!--En rad i tabell bodyn-->
+											<td>13</td><!--Ett tabell element i den första kolumnen-->
+											<td>Daniil Kvyat</td> <!--Ett tabell element i den andra kolumnen-->
+											<td>SCUDERIA TORO ROSSO HONDA</td><!--Ett tabell element i den tredje kolumnen-->
+											<td>37</td>
+										</tr>
+										<tr><!--En rad i tabell bodyn-->
+											<td>14</td><!--Ett tabell element i den första kolumnen-->
+											<td>Nico Hulkenberg</td> <!--Ett tabell element i den andra kolumnen-->
+											<td>RENAULT</td><!--Ett tabell element i den tredje kolumnen-->
+											<td>37</td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr><!--En rad i tabell bodyn-->
+											<td>Season 2019</td>
+										</tr>
+									</tfoot>
+							</table>
+						</section>
 				</main>
+					<h1>Easter egg :D </h1>
+				
 				<footer class="Standingsfooter">
 					<p> © 2020 Eddie Vestman</p>
 				</footer>
-			</body>
-				</html>
+	</body>
+</html>

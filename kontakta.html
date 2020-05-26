@@ -1,108 +1,106 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-		<link href="Style.css" rel="stylesheet">
-		<title>Contact</title>
-	</head>
+<!DOCTYPE html> <!-- Säger vilken verison av html som används-->
+<html lang="en"> <!--Används för skärmläsare, så den vet att sidan är skriven på engelska -->
+	<head> <!-- Början av head elementet-->
+					<meta charset="UTF-8"> <!--Tekenkodning UTF-8-->
+					<meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Stänger av zoom på alla telefoner -->
+					<meta http-equiv="X-UA-Compatible" content="ie=edge"> <!-- gör så den använder sig av den senaste rendereringsmotorn i microsoft edge-->
+					<link href="Style.css" rel="stylesheet"> <!-- Kopplar samman sidan till css -->
+					<title>Contact</title>
+	</head> <!-- Avslutar head elementet-->
+
 	<body>
-		<div class="gridContainer">
-			<header>
-				<nav>
-					<ul>
-						<li>
-							<a href="index.html">Formula 1</a>
-						</li>
-					</ul>
+			<div class="gridContainer">
+					<header> <!--Början av header -->
+							<nav>
+									<ul>
+											<li> <!--List item -->
+												<a href="index.html">Formula 1</a> <!--Länk-->
+											</li><!--Stänger List item -->
+									</ul> <!--Stänger Listan -->
+							</nav>
+					</header>
+			</div>
 
+							<nav class="undernav">
+									<ul>
+											<li><!--List item -->
+													<a href="kontakta.html">Contact</a> <!--Länk-->
+											</li><!--Stänger List item -->
+											<li><!--List item -->
+													<a href="om.html">About </a> <!--Länk-->
+											</li><!--Stänger List item -->
+									</ul><!--Stänger Listan -->
+							</nav>
+ 
+      	<main>
+        			<form method="post" action="index.html"> <!--Start av ett formulär-->
+        					<fieldset>
+        							<legend>Name</legend> <!--Namn på formulärdelen-->
+        								<label for="firstname">First:</label>
+        								<input type="text" id="firstname" name="firstname"/>
+        								<label for="lastname">Last: </label>
+        								<input type="text" id="lastname" name="lastname"/>
+							</fieldset>
+							<fieldset>
+        							<legend>Age</legend> <!--Namn på formulärdelen-->
+        								<label for="18">18+: </label>
+        									<input type="radio" id="18" name="age" value="18"/> <!--Input radio knapp-->
+        									<br>
+        								<label for="17">0-17: </label>
+        									<input type="radio" id="17" name="age" value="17"/> <!--Input radio knapp-->
+							</fieldset>
+							<fieldset>
+        							<legend>Gender</legend><!--Namn på formulärdelen-->
+        								<label for="Male">Male: </label>
+        									<input type="checkbox" id="Male" name="gender" value="Male"/>
+        									<br>
+        								<label for="Female">Female: </label>
+        									<input type="checkbox" id="Female" name="gender" value="Female"/>
+							</fieldset>
+							<fieldset>
+                				<label for="username">Username:</label>
+                					<input type="text" id="username" name="username">
+						<div>
+                				<label for="pass">Password (8 characters minimum):</label>
+                					<input type="password" id="pass" name="password" minlength="8" required>
 
-				</nav>
-			</header>
-			<nav class="undernav">
-				<ul>
-					<li>
-						<a href="kontakta.html">Contact</a>
-					</li>
-					<li>
-					<a href="om.html">About </a>
-					</li>
-				</ul>
+						</div>
+							</fieldset>
 
-			</nav>
-
-      <main>
-        <form method="get" action="index.html">
-        			<fieldset>
-        				<legend>Name</legend>
-        				<label for="firstname">First:</label>
-        				<input type="text" id="firstname" name="firstname"/>
-        				<label for="lastname">Last: </label>
-        				<input type="text" id="lastname" name="lastname"/>
-        			</fieldset>
-        			<fieldset>
-        				<legend>Age</legend>
-        				<label for="18">18+: </label>
-        				<input type="radio" id="18" name="age" value="18"/>
-        				<br>
-        				<label for="17">0-17: </label>
-        				<input type="radio" id="17" name="age" value="17"/>
-
-        			</fieldset>
-        			<fieldset>
-        				<legend>Gender</legend>
-        				<label for="Male">Male: </label>
-        				<input type="checkbox" id="Male" name="gender1" value="Male"/>
-        				<br>
-        				<label for="Female">Female: </label>
-        				<input type="checkbox" id="Female" name="gender2" value="Female"/>
-        			</fieldset>
-              <fieldset>
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username">
-                <div>
-                <label for="pass">Password (8 characters minimum):</label>
-                <input type="password" id="pass" name="password"
-                minlength="8" required>
-
-              </div>
-              </fieldset>
-
-        			<fieldset>
-        				<legend>Somethings about yourself</legend>
-        				<textarea></textarea>
-
-        			</fieldset>
-        			<fieldset>
-        			<legend>Favoirte F1 team</legend>
-        			  <input list="f1teams" name="Favoirte F1 team">
-        				<datalist id="f1teams">
-        					<option value="Mercedes">
-        					<option value="Ferarri">
-        					<option value="Alfa romeo">
-        					<option value="Renault">
-                  <option value="Haas">
-                  <option value="Williams Racing">
-                  <option value="AlphaTauri">
-                	<option value="Astomartin/honda">
-
-
-        				</datalist>
-          <input type="submit">
-        			</fieldset>
-        		</form>
-      </main>
+							<fieldset>
+        							<legend>Somethings about yourself</legend> <!--Namn på formulärdelen-->
+        							<textarea></textarea>
+							</fieldset>
+							<fieldset>
+        							<legend>Favoirte F1 team</legend> <!--Namn på formulärdelen-->
+        			  				<input list="f1teams" name="Favoirte F1 team">
+        									<datalist id="f1teams">
+        										<option value="Mercedes"> <!-- ett av alternativen i drop down listan-->
+        										<option value="Ferarri"> <!-- ett av alternativen i drop down listan-->
+        										<option value="Alfa romeo"><!-- ett av alternativen i drop down listan-->
+        										<option value="Renault"><!-- ett av alternativen i drop down listan-->
+												<option value="Haas"><!-- ett av alternativen i drop down listan-->
+												<option value="Williams Racing"><!-- ett av alternativen i drop down listan-->
+												<option value="AlphaTauri"><!-- ett av alternativen i drop down listan-->
+												<option value="Astomartin/honda"><!-- ett av alternativen i drop down listan-->
+											</datalist>
+									<input type="submit">
+							</fieldset>
+        			</form>
+      	</main>
 			<div>
-        <ol>
-          <li>
-            <p>Mail - Edve02001@utb.vaxjo.se </p>
-          </li>
+				<ol><!--Öppnar Listan som är en orderd list-->
+					<li> <!--List item -->
+						<p>Mail - Edve02001@utb.vaxjo.se </p>
+					</li><!--Stänger List item -->
 
-          <li>
-            <p> Phone:  17 241 53 21 </p>
-          </li>
-				</div>
-				<footer class="kontaktafooter">
+					<li><!--List item -->
+						<p> Phone:  17 241 53 21 </p>
+					</li><!--Stänger List item -->
+				</ol> <!--Stänger Listan -->
+			</div>
+				<footer class="kontaktafooter"> <!-- en footer, som är längst ner på sidan -->
 					<p> © 2020 Eddie Vestman</p>
 				</footer>
-			</body>
-				</html>
+	</body>
+</html>
