@@ -60,12 +60,6 @@ nav li a  {
   text-align:center; /* centerar texten i mitten*/
 }
 
-	Section.infoBox { /* Styling för själva lådan i mitten på index sidan används även på videos sidan för att få videorna att ligga korrekt i griden */
-	  display:flex;
-	  flex-direction: column;
-	  align-items: center;
-	  color:white;
-}
 
 }
 .undernav { /* stylear under delen på navabaren */
@@ -80,10 +74,7 @@ nav li a  {
 	margin:0px;
 
 }
-section.infoBox img { /*Styling för bilderna på index sidan */
-    border:5px red solid;
-    border-radius: 10px;
-}
+
 
 iframe { /* style för youtube videon */
   border:5px red solid; /*lägger till en border */
@@ -187,4 +178,17 @@ video {
 .driverbilder {  /* bestämmer storlekten på bilderna som används på drivers sidan*/
 	width:175px;
 	height:175px;
+}
+
+#index section{ /*används för griden på rutorna på index sidan och även video gridsen på videos.html */
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	color:white;
+
+}
+
+#index section img{ /*Används för att styela bordern runt om bilderna på index.html och videos på videos.html */
+	border:5px red solid;
+    border-radius: 10px;
 }
