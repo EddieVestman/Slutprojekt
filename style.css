@@ -3,7 +3,7 @@ background-image: url(https://wallpaperaccess.com/full/226175.jpg); /*backgrunds
 margin:0px; /*tar bort margin från yterdelarna på sidan */
 padding:0px 0px; /* gör så det är 0px padding */
 }
-.lag {
+.lag {  
 background-color: white; /* backgrunds färg*/
 }
 header {
@@ -11,8 +11,9 @@ header {
 	background-color:Red ; /*backgrundsfärg */
 	padding: 0px 5px;
 }
-.gridContainer {
+.gridContainer { /* styleing på gridcontainer som används på flera av mina sidor */
 	display: grid; /*säger åt den att använda grid */
+	grid-template-columns: 1fr; /*delar griden i en kollumn */
 	grid-template-columns: 1fr; /*delar griden i en kollumn */
 	grid-template-areas: /*Hur griden ska sorteras */
 	"header"
@@ -55,31 +56,31 @@ nav li a  {
 
 }
 
-.Information {
+.Information { /* används på index sidan till information rutan i mitten*/
   text-align:center; /* centerar texten i mitten*/
 }
 
-Section.infoBox {
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  color:white;
+	Section.infoBox { /* Styling för själva lådan i mitten på index sidan används även på videos sidan för att få videorna att ligga korrekt i griden */
+	  display:flex;
+	  flex-direction: column;
+	  align-items: center;
+	  color:white;
 }
 
 }
-.undernav {
+.undernav { /* stylear under delen på navabaren */
   display:flex;
   justify-content:center;
   color:red;
   font-size:70%;
 }
-.undernav ul {
+.undernav ul { /* stylear under delen på navabaren */
 	background-color:red;
 	padding:0px 10px;
 	margin:0px;
 
 }
-section.infoBox img {
+section.infoBox img { /*Styling för bilderna på index sidan */
     border:5px red solid;
     border-radius: 10px;
 }
@@ -97,17 +98,11 @@ footer {
 	background-color:red;
 	margin:0px;
 	padding:0px;
-	margin-top: 6%; /* margin på top för fottern */
+
 
 }
-.videofooter {
-	color:rgb(255, 255, 255);
-	background-color:red;
-	margin:0px;
-	padding:0px;
-	margin-top: 13%;
-}
-.griddrivers, .gridteams{
+
+.griddrivers, .gridteams{ /* Stylear griden för drivers och teams på deras respektive sidor */
 	display: grid;
 	grid-template-columns: 1fr; /*delar griden i en kollumn */
 	grid-template-areas:
@@ -116,7 +111,7 @@ footer {
 	"footer"
 }
 
-main.drivers  {
+main.drivers  { /* griden som fixar bilderna i gridden på drivers sidan*/
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr ; /*delar griden i en kollumn */
 	grid-template-rows: 1fr 1fr;
@@ -125,33 +120,14 @@ main.drivers  {
 	padding:0;
 }
 
-.footerdriver, .aboutfooter {
-	color:rgb(255, 255, 255);
-	background-color:red;
-	margin:0px;
-	padding:0px;
-	margin-top: 23%;
-}
 
-.teamsfooter{
-	color:rgb(255, 255, 255);
-	background-color:red;
-	margin:0px;
-	padding:0px;
-	margin-top: 42%;
+	
 }
-.aboutfooter {
-	color:rgb(255, 255, 255);
-	background-color:red;
-	margin:0px;
-	padding:0px;
-	margin-top: 22%;
-}
-#olist, ol {
+#olist, ol { /* Olist används på om sidan och stylear min orderd list*/
 	color:#FF0000;
 	font-size: 1.5em;
 }
-.teambody {
+.teambody { /* ändrar backgrunds bilden på hela teams.index sidan */
 	background-image: url(https://simracingsetup.com/wp-content/uploads/2020/02/F1-2020-All-Team-Desktop-Wallpaper.jpg);
 }
 h1, h2 ,h3 ,h4 ,h5 ,h6 {
@@ -193,21 +169,12 @@ td, th {
 
 }
 
-.Standingsfooter {
-	color:rgb(255, 255, 255);
-	position: absolute;
-	left:0;
-	bottom:0;
-	top:100%;
-	width:100%;
-	height:5%;
-}
 
 form {
 	color:white;
 }
 
-.indexbilder {
+.indexbilder { /* bestämmer storlekten på bilderna som används på index sidan*/
 	width:375px;
 	height:250px;
 
@@ -216,8 +183,8 @@ video {
 	width:320px;
 	height: 240px;
 }
-
-.driverbilder {
+ 
+.driverbilder {  /* bestämmer storlekten på bilderna som används på drivers sidan*/
 	width:175px;
 	height:175px;
 }

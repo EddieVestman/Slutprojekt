@@ -1,53 +1,59 @@
 <!DOCTYPE html> <!-- Säger vilken verison av html som används-->
-<html lang="en"> <!--Används för skärmläsare, så den vet att sidan är skriven på engelska -->
-	<head> <!-- Början av head elementet-->
-					<meta charset="UTF-8"> <!--Tekenkodning UTF-8-->
-					<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Stänger av zoom på alla telefoner -->
-					<meta http-equiv="X-UA-Compatible" content="ie=edge"> <!-- gör så den använder sig av den senaste rendereringsmotorn i microsoft edge-->
-					<link href="Style.css" rel="stylesheet"> <!-- Kopplar samman sidan till css -->
-					<title>Drivers</title>
-	</head> <!-- Avslutar head elementet-->
-
-	<body id="kropp">
-			<div class="griddrivers">
-					<header> <!--Början av header -->
-							<nav>
-									<ul> <!-- Säger att det är en unorderd list-->
-											<li>
-													<a href="index.html">Formula 1</a>
-											</li>
-									</ul>
-							</nav>
-					</header>
-			</div>
-
-						<nav class="undernav">
-									<ul> <!-- Säger att det är en unorderd list-->
-											<li>
-													<a href="kontakta.html">Contact</a>
-											</li>
-
-          						<li>
-													<a href="om.html">About </a>
-											</li>
-										</ul>
-							</nav>
-				 	<main class="drivers">
-
-        		<img class ="driverbilder" src="https://www.formula1.com/content/fom-website/en/drivers/lewis-hamilton/_jcr_content/image.img.1920.medium.jpg/1584013371803.jpg" alt="lewis-hamilton">
-        		<img class ="driverbilder" src="https://www.formula1.com/content/fom-website/en/drivers/valtteri-bottas/_jcr_content/image.img.1920.medium.jpg/1584013243241.jpg" alt="valtteri-bottas">
-        		<img class ="driverbilder" src="https://www.formula1.com/content/fom-website/en/drivers/charles-leclerc/_jcr_content/image.img.1920.medium.jpg/1584013824254.jpg" alt="charles-lecler">
-        		<img class ="driverbilder" src="https://www.formula1.com/content/fom-website/en/drivers/sebastian-vettel/_jcr_content/image.img.1920.medium.jpg/1584013014200.jpg" alt="sebastian-vettel">
-        		<img class ="driverbilder" src="https://www.formula1.com/content/fom-website/en/drivers/max-verstappen/_jcr_content/image.img.1920.medium.jpg/1584012927837.jpg" alt="max-verstappen">
-        		<img class ="driverbilder" src="https://www.formula1.com/content/fom-website/en/drivers/lando-norris/_jcr_content/image.img.1920.medium.jpg/1584013897913.jpg" alt="lando-norris">
-        		<img class ="driverbilder" src="https://www.formula1.com/content/fom-website/en/drivers/daniel-ricciardo/_jcr_content/image.img.1920.medium.jpg/1584012376585.jpg" alt="daniel-ricciardo">
-        		<img class ="driverbilder" src="https://www.formula1.com/content/fom-website/en/drivers/kevin-magnussen/_jcr_content/image.img.1920.medium.jpg/1584012829634.jpg" alt="kevin-magnussen">
-        		<img class ="driverbilder" src="https://www.formula1.com/content/fom-website/en/drivers/antonio-giovinazzi/_jcr_content/image.img.1920.medium.jpg/1584013739535.jpg" alt="antonio-giovinazzi">
-        		<img class ="driverbilder" src="https://www.formula1.com/content/fom-website/en/drivers/sergio-perez/_jcr_content/image.img.1920.medium.jpg/1584013058541.jpg" alt="sergio-perez">
-
-				</main>
-					<footer class="footerdriver"> <!-- en footer, som är längst ner på sidan -->
-						<p> © 2020 Eddie Vestman</p>
-				</footer>
-	</body>
+<html lang="en">
+   <!--Används för skärmläsare, så den vet att sidan är skriven på engelska -->
+   <head>
+      <!-- Början av head elementet-->
+      <meta charset="UTF-8">
+      <!--Tekenkodning UTF-8-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Stänger av zoom på alla telefoner -->
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <!-- gör så den använder sig av den senaste rendereringsmotorn i microsoft edge-->
+      <link href="Style.css" rel="stylesheet">
+      <!-- Kopplar samman sidan till css -->
+      <title>Drivers</title>
+   </head>
+   <!-- Avslutar head elementet-->
+   <body> 
+      <div class="griddrivers">  <!-- Används för att stylea griden på drivers sidan-->
+         <header>
+            <!--Början av header -->
+            <nav>
+               <ul>
+                  <!-- Säger att det är en unorderd list-->
+                  <li>
+                     <a href="index.html">Formula 1</a>
+                  </li>
+               </ul>
+            </nav>
+         </header>
+      </div>
+      <nav class="undernav"> <!-- Är en class som används för den undre delen på min nav bar. -->
+         <ul>
+            <!-- Säger att det är en unorderd list-->
+            <li>
+               <a href="kontakta.html">Contact</a>
+            </li>
+            <li>
+               <a href="om.html">About </a>
+            </li>
+         </ul>
+      </nav> 
+      <main class="drivers"> <!-- grid endast för bilderna på sidan -->
+         <img class ="driverbilder" src="https://www.formula1.com/content/fom-website/en/drivers/lewis-hamilton/_jcr_content/image.img.1920.medium.jpg/1584013371803.jpg" alt="lewis-hamilton"> <!-- Har en klass för att kunna alla bilderna på just denna sida-->
+         <img class ="driverbilder" src="https://www.formula1.com/content/fom-website/en/drivers/valtteri-bottas/_jcr_content/image.img.1920.medium.jpg/1584013243241.jpg" alt="valtteri-bottas"><!-- Har en klass för att kunna alla bilderna på just denna sida-->
+         <img class ="driverbilder" src="https://www.formula1.com/content/fom-website/en/drivers/charles-leclerc/_jcr_content/image.img.1920.medium.jpg/1584013824254.jpg" alt="charles-lecler"><!-- Har en klass för att kunna alla bilderna på just denna sida-->
+         <img class ="driverbilder" src="https://www.formula1.com/content/fom-website/en/drivers/sebastian-vettel/_jcr_content/image.img.1920.medium.jpg/1584013014200.jpg" alt="sebastian-vettel"><!-- Har en klass för att kunna alla bilderna på just denna sida-->
+         <img class ="driverbilder" src="https://www.formula1.com/content/fom-website/en/drivers/max-verstappen/_jcr_content/image.img.1920.medium.jpg/1584012927837.jpg" alt="max-verstappen"><!-- Har en klass för att kunna alla bilderna på just denna sida-->
+         <img class ="driverbilder" src="https://www.formula1.com/content/fom-website/en/drivers/lando-norris/_jcr_content/image.img.1920.medium.jpg/1584013897913.jpg" alt="lando-norris"><!-- Har en klass för att kunna alla bilderna på just denna sida-->
+         <img class ="driverbilder" src="https://www.formula1.com/content/fom-website/en/drivers/daniel-ricciardo/_jcr_content/image.img.1920.medium.jpg/1584012376585.jpg" alt="daniel-ricciardo"><!-- Har en klass för att kunna alla bilderna på just denna sida-->
+         <img class ="driverbilder" src="https://www.formula1.com/content/fom-website/en/drivers/kevin-magnussen/_jcr_content/image.img.1920.medium.jpg/1584012829634.jpg" alt="kevin-magnussen"><!-- Har en klass för att kunna alla bilderna på just denna sida-->
+         <img class ="driverbilder" src="https://www.formula1.com/content/fom-website/en/drivers/antonio-giovinazzi/_jcr_content/image.img.1920.medium.jpg/1584013739535.jpg" alt="antonio-giovinazzi"><!-- Har en klass för att kunna alla bilderna på just denna sida-->
+         <img class ="driverbilder" src="https://www.formula1.com/content/fom-website/en/drivers/sergio-perez/_jcr_content/image.img.1920.medium.jpg/1584013058541.jpg" alt="sergio-perez"><!-- Har en klass för att kunna alla bilderna på just denna sida-->
+      </main>
+      <footer>
+         <!-- en footer, som är längst ner på sidan -->
+         <p> © 2020 Eddie Vestman</p>
+      </footer>
+   </body>
 </html>
